@@ -6,19 +6,12 @@
 			"label": "C/C++: g++.exe build active file",
 			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
 			"args": [
-				"-L./",
-				"C:/Haelequin/Libbs/glfw-3.3.8.bin.WIN64/lib-mingw-w64/glfw3.dll",
-				"-I",
-				"C:\\Haelequin\\vulkantut",
-				"-I",
-				"C:/Haelequin/Libbs/glfw-3.3.8.bin.WIN64/include",
-				"-I",
-				"C:\\VulkanSDK\\1.3.250.0\\Include",
 				"-fdiagnostics-color=always",
-				"-g",
-				"main.cpp", "first_app.cpp", "lve_app_base.cpp", "lve_pipeline.cpp", "lve_window.cpp",
-				"-o",
-				"C:/Haelequin/vulkantut/main.exe"
+				"-c",
+				"${workspaceFolder}/*.cpp",
+				"-IC:/Haelequin/Libbs/glfw-3.3.8.bin.WIN64/include",
+				"-IC:\\VulkanSDK\\1.3.250.0\\Include",
+				"-IC:/Haelequin/vulkantut"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

@@ -12,6 +12,6 @@ int main(){
 		std::cerr << e.what() << "\n";
 		return EXIT_FAILURE;
 	}
-	std::cout<<"ff";
-	return EXIT_SUCCESS;
+	std::cout<<"fiddle";
+	return 0;
 }
